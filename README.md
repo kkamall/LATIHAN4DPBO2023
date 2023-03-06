@@ -6,6 +6,6 @@
 - Kelas : C1'21
 
 ## Janji:
-Saya [Muhammad Kamal Robbani] dengan nim 2102313 mengerjakan Latihan 2 DPBO dalam mata kuliah 
+Saya [Muhammad Kamal Robbani] dengan nim 2102313 mengerjakan Latihan 4 DPBO dalam mata kuliah 
 [Desain Pemrograman Berorientasi Objek] untuk keberkahan-Nya maka saya tidak melakukan 
 kecurangan seperti yang telah dispesifikasikan. Aamiin.
