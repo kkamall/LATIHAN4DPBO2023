@@ -20,7 +20,7 @@ Buatlah program berbasis OOP menggunakan bahasa pemrograman C++ dan Python yang 
   - Program Studi: nama_prodi, kode, course
   
 ## Desain Program:
-![Untitled Diagram drawio](https://user-images.githubusercontent.com/101335350/223612741-c4b42021-6f98-448d-924f-f77ca362da36.png)
+![image](https://user-images.githubusercontent.com/101335350/223707686-5c3152f2-9bb0-4b84-ad0b-01bd68b9dfdf.png)
 - Human:
   - Atribut Ambigu: -
   - Method:
@@ -50,3 +50,47 @@ Buatlah program berbasis OOP menggunakan bahasa pemrograman C++ dan Python yang 
       2. Atribut dalam kelas Human dapat diakomodir oleh kelas Dosen.
     - Dosen has a Course, alasan:
       1. Dosen mengampu mata kuliah.
+- Course:
+  - Atribut Ambigu: -
+  - Method:
+    - get_...() => Mendapatkan value di suatu atribut.
+    - set_...() => Memberi value kepada suatu atribut.
+  - Relasi: -
+- ProgramStudi:
+  - Atribut Ambigu: -
+  - Method:
+    - get_...() => Mendapatkan value di suatu atribut.
+    - set_...() => Memberi value kepada suatu atribut.
+  - Relasi:
+    - ProgramStudi has a Course, alasan:
+      1. Program studi memiliki course untuk dikontrak mahasiswa.
+    - ProgramStudi has a SivitasAkademik, alasan:
+      1. Program studi memiliki mahasiswa dan dosen melalui sivitas akademik.
+- SivitasAkademik:
+  - Atribut Ambigu:
+    - email_edu (String) => Hanya berupa akhira dari e-mail EDU suatu Universitas, e.g "@upi.edu".
+  - Method:
+    - get_...() => Mendapatkan value di suatu atribut.
+    - set_...() => Memberi value kepada suatu atribut.
+  - Relasi:
+    - SivitasAkademik has a Mahasiswa, alasan:
+      1. Secara pengertian sivitas akademik adalah seluruh komunitas akademik suatu institusi pendidikan, salah satu komponennya adalah mahasiswa.
+    - SivitasAkademik has a Dosen, alasan:
+      1. Secara pengertian sivitas akademik adalah seluruh komunitas akademik suatu institusi pendidikan, salah satu komponennya adalah dosen.
+      
+## Penjelasan Alur Main (Python)
+1. *Import library* dan file *class* yang digunakan.
+2. Inisialisasi variabel sesuai kebutuhan.
+3. Memasukkan data-data ke atribut class secara hardcode.
+4. Mengeluarkan *output* dengan struktur sebagai berikut:
+  - List Program Studi
+    - List Matakuliah dalam Program Studi
+    - List Sivitas Akademik
+      - List Mahasiswa
+        - List Mata Kuliah yang Dikontrak Oleh Mahasiswa
+      - List Dosen
+        - List Mata Kuliah yang Diampu oleh Dosen
+5. END.
+
+## Dokumentasi
+![Screenshot](https://user-images.githubusercontent.com/101335350/223709926-663a039f-5570-4db1-866e-d505c17221cd.png)
